@@ -1,40 +1,16 @@
-# processo-seletivo
-O teste foi feito com uma arquitetura bem simples para facilitar o entendimento. É um pequeno sistema para gerenciar os funcionários dos setores.
-É possível **exibir** todos os funcionários existentes se os dados forem inseridos manualmente na base de dados.
-
-É preciso que você implemente as funcionalidades de **inserir**, **editar** e 
+# Projeto
+Feito com uma arquitetura bem simples para facilitar o entendimento. É um pequeno sistema para gerenciar os funcionários dos setores.
+É possível **exibir** todos os funcionários existentes se os dados forem inseridos manualmente na base de dados. **inserir**, **editar** e 
 **deletar** um funcionário.
-
-Foi implementado apenas as classes relacionadas a entidade Funcionario.
 
 # Requisitos
 
-1. Continuar o desenvolvimento do sistema
-2. Utilizar no Front-end HTML, CSS e Javascript (Foi implementado utilizando Vue e Axios)
-3. Web Services RESTful em Java usando Jersey
-4. Integração com Banco de Dados 
-5. Testes de integração
+1. Inistarlar banco de dados MySQL 
+2. Instalar apacheserver 8.5 
 
-# O que fazer agora
+# O que foi feito
 
-Faça um clone desse projeto e divida em commits os passos necessários para a
-produção do resultado final. Quando terminar envie o link do projeto no seu repositório para gustavo.oliveira@hepta.com.br com o título "Processo seletivo - [seu nome]", se você nunca usou git crie uma conta no gitlab e 
-dê uma olhada nos links abaixo.
-
-Lembre-se de adicionar um arquivo HOWTO.md descrevendo o necessário para execução 
-da aplicação e dos testes.  
-
-Trabalhamos com várias tecnologias porém a maioria dos sistemas são em Java no back-end e Vue.js no front-end, JUnit para os testes de integração.
-
-# Avaliação
-
-O objetivo desse teste é medir o seu conhecimento sobre as boas práticas de programação, facilidade em aprender novas tecnologias e de melhorar/continuar projetos em andamento.
-
-Você tem o prazo de 1 semana, a partir do dia posterior ao de envio. 
-Mesmo que não complete todo o teste, envie mesmo assim, 
-ele não é de caráter desclassificatório, mas sim, classificatório. 
-Sinta-se a vontade para implementar mais funcionalidades e alterações de interface. 
-
+sistema em Java no back-end e Vue.js no front-end, JUnit para os testes de integração.
 
 # Links úteis
 
