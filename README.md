@@ -10,7 +10,7 @@ Feito com uma arquitetura bem simples para facilitar o entendimento. É um peque
 
 # O que foi feito
 
-sistema em Java no back-end e Vue.js no front-end, JUnit para os testes de integração.
+sistema em Java no back-end e Vue.js no front-end, e  os testes de integração com JUnit.
 
 # Links úteis
 
