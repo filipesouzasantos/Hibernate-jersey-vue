@@ -14,7 +14,7 @@ Insira os valores corespondentes ao seu usuario e senha do banco de dados corres
 <property name="javax.persistence.jdbc.password" value="toor" />
 
 
-##Outros
+## Outros
 ### Realize o build do projeto
 
 ### Execulte pelo TOMCAT
