@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" />
+<title>Funcionários - Início</title>
+<link rel="stylesheet" type="text/css"
+	href="resources/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+	href="resources/css/bootstrap-vue.css">
+</head>
+
+<body class="bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+		<a target="_blank" class="navbar-brand"
+			href="https://gitlab.com/gustavo-oliveira/processo-seletivo-20">HEPTA</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarText" aria-controls="navbarText"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link"
+					href="/funcionarios/pages/novo-funcionario.html">Novo funcionário <span
+						class="sr-only">(current)</span></a></li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<div id="inicio" class="container-fluid table">
+		<h4 class="text-primary mt-4">Lista dos Funcionários</h4>
+		<table>
+			<tr class="text-primary">
+				<th>Nome</th>
+				<th>Setor</th>
+				<th>Salário</th>
+				<th>Email</th>
+				<th>Idade</th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tbody id="event-table">
+				<tr v-for="funcionario in listaProdutos" :key="funcionario.id">
+					<td><input class="form-control" type="text" v-model="funcionario.nome"></td>
+					<td><select class="form-control" type="text" v-model="funcionario.setor.id">
+							<option disabled value="">{{funcionario.setor.nome}}</option>
+							<option value=1>SUPORTE</option>
+							<option value=2>DESENVOLVIMENTO</option>
+							<option value=3>TESTE</option>
+					</select></td>
+					<td><input class="form-control" type="text" v-model="funcionario.salario"></td>
+					<td><input class="form-control" type="text" v-model="funcionario.email"></td>
+					<td><input  class="form-control" type="text" v-model="funcionario.idade"></td>
+					<td><span style="cursor: pointer"
+						@click="editFuncionary(funcionario.id, funcionario.nome, funcionario.idade, funcionario.email, funcionario.salario, funcionario.setor.id )">&#9998;</span>
+						<span style="cursor: pointer" @click="deleteFuncionary(funcionario.id)">&#10006;</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script src="resources/js/vue.js"></script>
+	<script src="resources/js/axios.min.js"></script>
+	<script src="resources/js/home-page.js"></script>
+</body>
+</html>

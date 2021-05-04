@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" />
+<title>Cadastrar um novo Funcionario</title>
+<link rel="stylesheet" type="text/css"
+	href="../resources/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/main.css">
+</head>
+
+<body class="bg-dark">
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+		<a target="_blank" class="navbar-brand"
+			href="https://gitlab.com/gustavo-oliveira/processo-seletivo-20">HEPTA</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarText" aria-controls="navbarText"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link"
+					href="/funcionarios/index.html">TODOS OS FUNCIONÁRIOS <span
+						class="sr-only">(current)</span></a></li>
+
+			</ul>
+		</div>
+	</nav>
+	<div id="app" class="m-5">
+	
+	 <p v-if="errors.length">
+    
+    <ul style=" list-style-type: none" >
+      <li class ="alert alert-danger" v-for="error in errors">{{ error }}</li>
+    </ul>
+  </p>
+	
+	
+		<div class="card">
+			<div class="card-header">
+				<h4>Cadastro de funcionário</h4>
+			</div>
+			<div class="card-body">
+				<form name="form" >
+					<div class="d-flex p-2 card ">
+						<div class="card-body">
+							<input class="form-control" type="text"
+								placeholder="Digite o nome do fucnionário" v-model="nome"
+								size="60" /><br /> <input class="form-control" type="email"
+								placeholder="Digite o email do fucnionário" v-model="email"
+								size="60" /><br /> <input class="form-control" type="number"
+								placeholder="Digite o salario do funcionário" v-model="salario"
+								size="60" /><br /> <input class="form-control" type="number"
+								placeholder="Digite a idade do fucionário" v-model="idade"
+								size="60" /><br />
+								 <div class="form-group">
+   									 <label >Setor</label>
+								 <select class="form-control"
+								v-model="setor">
+								<option value=1>SUPORTE</option>
+								<option value=2>DESENVOLVIMENTO</option>
+								<option value=3>TESTE</option>
+							</select> </div><input class="mt-5 btn btn-primary btn-lg btn-block"
+								 value="CADASTRAR NOVO FUNCIONÁRIO"
+								@click="createFuncionary" /><br />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../resources/js/vue.js"></script>
+	<script src="../resources/js/axios.min.js"></script>
+	<script src="../resources/js/cadastro-funcionario.js"></script>
+
+</body>
+</html>
