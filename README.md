@@ -1,6 +1,6 @@
 # Projeto
 Feito com uma arquitetura bem simples para facilitar o entendimento. É um pequeno sistema para gerenciar os funcionários dos setores.
-É possível **exibir** todos os funcionários existentes se os dados forem inseridos manualmente na base de dados. **inserir**, **editar** e 
+É possível **exibir** todos os funcionários existentes. **inserir**, **editar** e 
 **deletar** um funcionário.
 
 # Requisitos
